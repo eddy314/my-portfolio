@@ -22,10 +22,11 @@ a{
     color:black;
 }
 h1{
-    margin-top:13%;
+    margin-top:3%;
     font-size:4rem;
     color:black;
 }
+
 #about-content{
     text-align: center;
     font-weight:1000;
@@ -34,6 +35,23 @@ h1{
 }
 #one{
     font-size:3rem;
+    color:blue;
+    animation-name:design;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition:0.5s linear all;
+}
+@keyframes design{
+    0%{
+        color:blue;
+    }
+    50%{
+        color:red;
+    }
+    100%{
+        color:blue;
+    }
 }
 #projects{
    /* background-color:#1B9CFC ; */
@@ -83,6 +101,15 @@ img{
     font-size:2rem;
     color:black;
     
+}
+#profile_img{
+    display:block;
+    border-radius:100%;
+    width:20%;
+    margin-top:12%;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow:1px 1px 1px 1px white;
 }
 h3{
     margin-bottom:80px;
@@ -479,7 +506,14 @@ h3{
     }
     h1{
         font-size:2.5rem;
-        margin-top: 80%;
+        margin-top: 5%;
+    }
+    
+    #profile_img{
+        width:100%;
+        margin-top:55%;
+        padding:0px 30%;
+        box-shadow:none;
     }
     #about-content{
         text-align: center;
@@ -503,7 +537,7 @@ h3{
      width:16rem;
     }
     #my-accomplishments{
-      margin-left:8px;
+      margin-left:7px;
       
     }
     #a-card{
@@ -548,13 +582,19 @@ h3{
     }
     h1{
         font-size:2.5rem;
-        margin-top: 80%;
+        margin-top: 10%;
     }
     #about-content{
         text-align: center;
         font-weight:1000;
         font-size:1.5rem;
         padding:0px 20px;
+    }
+    #profile_img{
+        width:100%;
+        margin-top:22%;
+        padding:0px 20%;
+        box-shadow:none;
     }
     #one{
         font-size:1.8rem;
@@ -568,6 +608,7 @@ h3{
         
         margin-left:7%;
     }
+   
   .card{
      width:16rem;
     }
@@ -576,8 +617,13 @@ h3{
       
     }
     #a-card{
-        width:21rem;
-        margin-top:30px;
+      /*display:block;
+       width:21rem;
+       margin-right: auto; */  
+       
+     max-width:21rem;
+    margin-top:30px; 
+      
     }
     .a-img{
         width:20.5rem;
@@ -616,18 +662,39 @@ h3{
         margin-left:0px;
         font-size:1rem;
     }
+    #profile_img{
+        width:100%;
+        margin-top:20%;
+        padding:0px 20%;
+        box-shadow:none;
+    }
     h1{
         font-size:2.5rem;
-        margin-top: 80%;
+        margin-top: 20%;
     }
     #one{
         font-size:1.8rem;
     }
+    #about-content{
+        padding-left:5px;
+        padding-right: 5px;
+    }
+   
     #projects{
         margin-top:90%;
     
     }
     .row{
         margin-left:0%;
+    }
+    #a-card{
+        display:block;
+        width:15rem;
+        margin-left:-50px;
+        
+    }
+    .a-img{
+        text-align:center;
+        width:14rem;
     }
 }
